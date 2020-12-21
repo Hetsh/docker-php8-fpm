@@ -20,7 +20,7 @@ if ! docker version &> /dev/null; then
 fi
 
 # Build the image
-APP_NAME="php7-fpm"
+APP_NAME="php8-fpm"
 IMG_NAME="hetsh/$APP_NAME"
 docker build --tag "$IMG_NAME:latest" --tag "$IMG_NAME:$_NEXT_VERSION" .
 
