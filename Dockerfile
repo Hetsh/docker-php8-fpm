@@ -10,6 +10,7 @@ ARG APP_UID=33
 ARG OLD_GROUP="xfs"
 ARG APP_GROUP="http"
 ARG APP_GID=33
+# "Hijacking" user xfs for same uid & gid as user http on archlinux
 RUN sed -i "s|$OLD_USER:x:$APP_UID:$APP_GID:X Font Server:/etc/X11/fs:|$APP_USER:x:$APP_UID:$APP_GID:::|" /etc/passwd && \
     sed -i "s|$OLD_GROUP:x:$APP_GID:$OLD_USER|$APP_GROUP:x:$APP_GID:|" /etc/group
 
