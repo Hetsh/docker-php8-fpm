@@ -15,7 +15,7 @@ docker stop php8-fpm
 ## Configuration
 Adjustments can be made via a custom `php.ini` file. It can be mounted readonly:
 ```bash
---mount type=bind,readonly,source="/path/to/php.ini",target="/etc/php8/php.ini"
+--mount type=bind,readonly,source="/path/to/php.ini",target="/etc/php/php.ini"
 ```
 
 ## Automate startup and shutdown via systemd
