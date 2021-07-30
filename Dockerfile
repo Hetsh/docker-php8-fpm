@@ -1,4 +1,4 @@
-FROM library/alpine:20210212
+FROM library/alpine:20210730
 RUN apk add --no-cache \
         php8=8.0.9-r0 \
         php8-fpm=8.0.9-r0
