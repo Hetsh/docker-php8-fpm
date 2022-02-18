@@ -1,7 +1,7 @@
 FROM amd64/alpine:20210804
 RUN apk add --no-cache \
-        php8=8.0.15-r3 \
-        php8-fpm=8.0.15-r3
+        php8=8.0.16-r0 \
+        php8-fpm=8.0.16-r0
 
 # App user
 ARG OLD_USER="xfs"
