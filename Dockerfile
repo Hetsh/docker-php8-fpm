@@ -1,4 +1,4 @@
-FROM amd64/alpine:20220328
+FROM amd64/alpine:20220715
 RUN apk add --no-cache \
         php8=8.0.21-r1 \
         php8-fpm=8.0.21-r1
